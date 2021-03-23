@@ -1,0 +1,260 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/TOSHIBA/Desktop/Maestria Docs Ingreso/semestre 2/Quartus/VidorFPGA-master/projects/vidor_pwm/simulation/modelsim
+Eclk_prescaler
+Z1 w1585199888
+Z2 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z5 8C:/Users/TOSHIBA/Desktop/Maestria Docs Ingreso/semestre 2/Quartus/VidorFPGA-master/projects/vidor_pwm/clk_prescaler.vhd
+Z6 FC:/Users/TOSHIBA/Desktop/Maestria Docs Ingreso/semestre 2/Quartus/VidorFPGA-master/projects/vidor_pwm/clk_prescaler.vhd
+l0
+L5
+V04nP0kAmUH?X:[k[QSEEL3
+!s100 c;2XK5=4D;]aME86leSio0
+Z7 OV;C;10.5b;63
+31
+Z8 !s110 1585261564
+!i10b 1
+Z9 !s108 1585261564.000000
+Z10 !s90 -reportprogress|300|-93|-work|work|C:/Users/TOSHIBA/Desktop/Maestria Docs Ingreso/semestre 2/Quartus/VidorFPGA-master/projects/vidor_pwm/clk_prescaler.vhd|
+Z11 !s107 C:/Users/TOSHIBA/Desktop/Maestria Docs Ingreso/semestre 2/Quartus/VidorFPGA-master/projects/vidor_pwm/clk_prescaler.vhd|
+!i113 1
+Z12 o-93 -work work
+Z13 tExplicit 1 CvgOpt 0
+Abhv
+R2
+R3
+R4
+DEx4 work 13 clk_prescaler 0 22 04nP0kAmUH?X:[k[QSEEL3
+l18
+L13
+VICROWj4MnPM8CMPJoMMI00
+!s100 G6VjCji[>OJ?7<QS8@>RB3
+R7
+31
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+vMKRVIDOR4000_top
+Z14 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+R8
+!i10b 1
+!s100 C3DHG?blho<<F7Go9mFME0
+I9maN@_5hDYjeMeVB=nY?@0
+Z15 VDg1SIo80bB@j0V0VzS_@n1
+!s105 MKRVIDOR4000_top_v_unit
+S1
+R0
+w1585261418
+8C:/Users/TOSHIBA/Desktop/Maestria Docs Ingreso/semestre 2/Quartus/VidorFPGA-master/projects/vidor_pwm/MKRVIDOR4000_top.v
+FC:/Users/TOSHIBA/Desktop/Maestria Docs Ingreso/semestre 2/Quartus/VidorFPGA-master/projects/vidor_pwm/MKRVIDOR4000_top.v
+L0 21
+Z16 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z17 !s108 1585261563.000000
+!s107 C:/Users/TOSHIBA/Desktop/Maestria Docs Ingreso/semestre 2/Quartus/VidorFPGA-master/projects/vidor_pwm/MKRVIDOR4000_top.v|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/TOSHIBA/Desktop/Maestria Docs Ingreso/semestre 2/Quartus/VidorFPGA-master/projects/vidor_pwm|C:/Users/TOSHIBA/Desktop/Maestria Docs Ingreso/semestre 2/Quartus/VidorFPGA-master/projects/vidor_pwm/MKRVIDOR4000_top.v|
+!i113 1
+Z18 o-sv -work work
+!s92 -sv -work work {+incdir+C:/Users/TOSHIBA/Desktop/Maestria Docs Ingreso/semestre 2/Quartus/VidorFPGA-master/projects/vidor_pwm}
+Z19 tCvgOpt 0
+n@m@k@r@v@i@d@o@r4000_top
+Epwm
+Z20 w1585199717
+Z21 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z22 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+R3
+R4
+R0
+Z23 8C:/Users/TOSHIBA/Desktop/Maestria Docs Ingreso/semestre 2/Quartus/VidorFPGA-master/projects/vidor_pwm/pwm.vhd
+Z24 FC:/Users/TOSHIBA/Desktop/Maestria Docs Ingreso/semestre 2/Quartus/VidorFPGA-master/projects/vidor_pwm/pwm.vhd
+l0
+L30
+V;^Ic@@hM6PCiVDkVlAX9G0
+!s100 E]MgE`Io[7B7<oZni6lDn1
+R7
+31
+R8
+!i10b 1
+R9
+Z25 !s90 -reportprogress|300|-93|-work|work|C:/Users/TOSHIBA/Desktop/Maestria Docs Ingreso/semestre 2/Quartus/VidorFPGA-master/projects/vidor_pwm/pwm.vhd|
+Z26 !s107 C:/Users/TOSHIBA/Desktop/Maestria Docs Ingreso/semestre 2/Quartus/VidorFPGA-master/projects/vidor_pwm/pwm.vhd|
+!i113 1
+R12
+R13
+Alogic
+R21
+R22
+R3
+R4
+DEx4 work 3 pwm 0 22 ;^Ic@@hM6PCiVDkVlAX9G0
+l49
+L44
+V<@KkUodjFRnAD[A>YGW;A1
+!s100 M0I`TFlH<ioR7d`mOQSbf1
+R7
+31
+R8
+!i10b 1
+R9
+R25
+R26
+!i113 1
+R12
+R13
+Eservo_test_angle
+Z27 w1585260567
+R2
+R3
+R4
+R0
+Z28 8C:/Users/TOSHIBA/Desktop/Maestria Docs Ingreso/semestre 2/Quartus/VidorFPGA-master/projects/vidor_pwm/servo_test_angle.vhd
+Z29 FC:/Users/TOSHIBA/Desktop/Maestria Docs Ingreso/semestre 2/Quartus/VidorFPGA-master/projects/vidor_pwm/servo_test_angle.vhd
+l0
+L5
+V5FXI:TH2U6^L7h?1fG4K_1
+!s100 NYnC>R7_;1lT>WPgAbzQX3
+R7
+31
+R8
+!i10b 1
+R9
+Z30 !s90 -reportprogress|300|-93|-work|work|C:/Users/TOSHIBA/Desktop/Maestria Docs Ingreso/semestre 2/Quartus/VidorFPGA-master/projects/vidor_pwm/servo_test_angle.vhd|
+Z31 !s107 C:/Users/TOSHIBA/Desktop/Maestria Docs Ingreso/semestre 2/Quartus/VidorFPGA-master/projects/vidor_pwm/servo_test_angle.vhd|
+!i113 1
+R12
+R13
+Abhv
+R2
+R3
+R4
+DEx4 work 16 servo_test_angle 0 22 5FXI:TH2U6^L7h?1fG4K_1
+l11
+L10
+VBN3eejihn^6^HELUS@WSf1
+!s100 ISRCWzREdI]CLmh`gV:9m1
+R7
+31
+R8
+!i10b 1
+R9
+R30
+R31
+!i113 1
+R12
+R13
+Eservo_test_angle_testbench
+Z32 w1585261546
+R21
+R22
+Z33 DPx4 ieee 16 std_logic_textio 0 22 V5TSK`;aJKC<l]CEg1>mz1
+R4
+R3
+R2
+R0
+Z34 8C:/Users/TOSHIBA/Desktop/Maestria Docs Ingreso/semestre 2/Quartus/VidorFPGA-master/projects/vidor_pwm/simulation/modelsim/servo_test_angle_testbench.vhd
+Z35 FC:/Users/TOSHIBA/Desktop/Maestria Docs Ingreso/semestre 2/Quartus/VidorFPGA-master/projects/vidor_pwm/simulation/modelsim/servo_test_angle_testbench.vhd
+l0
+L8
+V960P7a9;E_RNPLE^h=<iD2
+!s100 Rbl_6nGe>DFU^72i59F?l0
+R7
+31
+Z36 !s110 1585261565
+!i10b 1
+Z37 !s108 1585261565.000000
+Z38 !s90 -reportprogress|300|-93|-work|work|C:/Users/TOSHIBA/Desktop/Maestria Docs Ingreso/semestre 2/Quartus/VidorFPGA-master/projects/vidor_pwm/simulation/modelsim/servo_test_angle_testbench.vhd|
+Z39 !s107 C:/Users/TOSHIBA/Desktop/Maestria Docs Ingreso/semestre 2/Quartus/VidorFPGA-master/projects/vidor_pwm/simulation/modelsim/servo_test_angle_testbench.vhd|
+!i113 1
+R12
+R13
+Aservo_test_angle_testbench_arch
+R21
+R22
+R33
+R4
+R3
+R2
+DEx4 work 26 servo_test_angle_testbench 0 22 960P7a9;E_RNPLE^h=<iD2
+l19
+L11
+V?X3Ki1=c^0RZG4@C>JBOH2
+!s100 ccFh9Zkh3f:ezR3fjjdXd2
+R7
+31
+R36
+!i10b 1
+R37
+R38
+R39
+!i113 1
+R12
+R13
+vSYSTEM_PLL
+R14
+!s110 1585261563
+!i10b 1
+!s100 JWI3TQPoA[`=VJgzcNa?>3
+IHgC@DY>3BVNJ`QI_YnaKR3
+R15
+!s105 SYSTEM_PLL_v_unit
+S1
+R0
+w1579460862
+8C:/Users/TOSHIBA/Desktop/Maestria Docs Ingreso/semestre 2/Quartus/VidorFPGA-master/ip/SYSTEM_PLL/SYSTEM_PLL.v
+FC:/Users/TOSHIBA/Desktop/Maestria Docs Ingreso/semestre 2/Quartus/VidorFPGA-master/ip/SYSTEM_PLL/SYSTEM_PLL.v
+L0 40
+R16
+r1
+!s85 0
+31
+R17
+!s107 C:/Users/TOSHIBA/Desktop/Maestria Docs Ingreso/semestre 2/Quartus/VidorFPGA-master/ip/SYSTEM_PLL/SYSTEM_PLL.v|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/TOSHIBA/Desktop/Maestria Docs Ingreso/semestre 2/Quartus/VidorFPGA-master/ip/SYSTEM_PLL|C:/Users/TOSHIBA/Desktop/Maestria Docs Ingreso/semestre 2/Quartus/VidorFPGA-master/ip/SYSTEM_PLL/SYSTEM_PLL.v|
+!i113 1
+R18
+!s92 -sv -work work {+incdir+C:/Users/TOSHIBA/Desktop/Maestria Docs Ingreso/semestre 2/Quartus/VidorFPGA-master/ip/SYSTEM_PLL}
+R19
+n@s@y@s@t@e@m_@p@l@l
+vSYSTEM_PLL_altpll
+R14
+R8
+!i10b 1
+!s100 f]3TBi[XNz?9PJPiJ;Fbh2
+IVQN@_<X@^g9[7WFI8Ck?C0
+R15
+!s105 system_pll_altpll_v_unit
+S1
+R0
+w1585177595
+8C:/Users/TOSHIBA/Desktop/Maestria Docs Ingreso/semestre 2/Quartus/VidorFPGA-master/projects/vidor_pwm/db/system_pll_altpll.v
+FC:/Users/TOSHIBA/Desktop/Maestria Docs Ingreso/semestre 2/Quartus/VidorFPGA-master/projects/vidor_pwm/db/system_pll_altpll.v
+L0 31
+R16
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/TOSHIBA/Desktop/Maestria Docs Ingreso/semestre 2/Quartus/VidorFPGA-master/projects/vidor_pwm/db/system_pll_altpll.v|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/TOSHIBA/Desktop/Maestria Docs Ingreso/semestre 2/Quartus/VidorFPGA-master/projects/vidor_pwm/db|C:/Users/TOSHIBA/Desktop/Maestria Docs Ingreso/semestre 2/Quartus/VidorFPGA-master/projects/vidor_pwm/db/system_pll_altpll.v|
+!i113 1
+R18
+!s92 -sv -work work {+incdir+C:/Users/TOSHIBA/Desktop/Maestria Docs Ingreso/semestre 2/Quartus/VidorFPGA-master/projects/vidor_pwm/db}
+R19
+n@s@y@s@t@e@m_@p@l@l_altpll

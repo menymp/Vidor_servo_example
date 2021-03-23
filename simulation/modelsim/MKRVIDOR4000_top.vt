@@ -1,0 +1,319 @@
+// Copyright (C) 2019  Intel Corporation. All rights reserved.
+// Your use of Intel Corporation's design tools, logic functions 
+// and other software and tools, and any partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Intel Program License 
+// Subscription Agreement, the Intel Quartus Prime License Agreement,
+// the Intel FPGA IP License Agreement, or other applicable license
+// agreement, including, without limitation, that your use is for
+// the sole purpose of programming logic devices manufactured by
+// Intel and sold by Intel or its authorized distributors.  Please
+// refer to the applicable agreement for further details, at
+// https://fpgasoftware.intel.com/eula.
+
+// *****************************************************************************
+// This file contains a Verilog test bench template that is freely editable to  
+// suit user's needs .Comments are provided in each section to help the user    
+// fill out necessary details.                                                  
+// *****************************************************************************
+// Generated on "03/25/2020 18:24:40"
+                                                                                
+// Verilog Test Bench template for design : MKRVIDOR4000_top
+// 
+// Simulation tool : ModelSim-Altera (Verilog)
+// 
+
+`timescale 1 ps/ 1 ps
+module MKRVIDOR4000_top_vlg_tst();
+// constants                                           
+// general purpose registers
+reg eachvec;
+// test vector input registers
+reg treg_bHDMI_SCL;
+reg treg_bHDMI_SDA;
+reg [1:0] treg_bMIPI_GP;
+reg treg_bMIPI_SCL;
+reg treg_bMIPI_SDA;
+reg [6:0] treg_bMKR_A;
+reg treg_bMKR_AREF;
+reg [14:0] treg_bMKR_D;
+reg treg_bPEX_PIN6;
+reg treg_bPEX_PIN8;
+reg treg_bPEX_PIN10;
+reg treg_bPEX_PIN12;
+reg treg_bPEX_PIN14;
+reg treg_bPEX_PIN16;
+reg treg_bPEX_PIN20;
+reg treg_bPEX_PIN28;
+reg treg_bPEX_PIN30;
+reg treg_bPEX_PIN32;
+reg treg_bPEX_PIN42;
+reg treg_bPEX_PIN44;
+reg treg_bPEX_PIN45;
+reg treg_bPEX_PIN46;
+reg treg_bPEX_PIN47;
+reg treg_bPEX_PIN48;
+reg treg_bPEX_PIN49;
+reg treg_bPEX_PIN51;
+reg treg_bPEX_RST;
+reg [15:0] treg_bSDRAM_DQ;
+reg treg_bWM_PIO1;
+reg treg_bWM_PIO2;
+reg treg_bWM_PIO3;
+reg treg_bWM_PIO4;
+reg treg_bWM_PIO5;
+reg treg_bWM_PIO7;
+reg treg_bWM_PIO8;
+reg treg_bWM_PIO18;
+reg treg_bWM_PIO20;
+reg treg_bWM_PIO21;
+reg treg_bWM_PIO27;
+reg treg_bWM_PIO28;
+reg treg_bWM_PIO29;
+reg treg_bWM_PIO31;
+reg treg_bWM_PIO34;
+reg treg_bWM_PIO35;
+reg treg_bWM_PIO36;
+reg iCLK;
+reg treg_iFLASH_MISO;
+reg iHDMI_HPD;
+reg iMIPI_CLK;
+reg [1:0] iMIPI_D;
+reg iPEX_PIN11;
+reg iPEX_PIN13;
+reg iPEX_PIN23;
+reg iPEX_PIN25;
+reg iPEX_PIN31;
+reg iPEX_PIN33;
+reg iRESETn;
+reg iSAM_INT;
+reg iWM_PIO32;
+reg iWM_TX;
+reg treg_oFLASH_HOLD;
+reg treg_oFLASH_MOSI;
+reg treg_oFLASH_WP;
+reg treg_oWM_RESET;
+reg treg_oWM_RX;
+// wires                                               
+wire bHDMI_SCL;
+wire bHDMI_SDA;
+wire [1:0]  bMIPI_GP;
+wire bMIPI_SCL;
+wire bMIPI_SDA;
+wire [6:0]  bMKR_A;
+wire bMKR_AREF;
+wire [14:0]  bMKR_D;
+wire bPEX_PIN6;
+wire bPEX_PIN8;
+wire bPEX_PIN10;
+wire bPEX_PIN12;
+wire bPEX_PIN14;
+wire bPEX_PIN16;
+wire bPEX_PIN20;
+wire bPEX_PIN28;
+wire bPEX_PIN30;
+wire bPEX_PIN32;
+wire bPEX_PIN42;
+wire bPEX_PIN44;
+wire bPEX_PIN45;
+wire bPEX_PIN46;
+wire bPEX_PIN47;
+wire bPEX_PIN48;
+wire bPEX_PIN49;
+wire bPEX_PIN51;
+wire bPEX_RST;
+wire [15:0]  bSDRAM_DQ;
+wire bWM_PIO1;
+wire bWM_PIO2;
+wire bWM_PIO3;
+wire bWM_PIO4;
+wire bWM_PIO5;
+wire bWM_PIO7;
+wire bWM_PIO8;
+wire bWM_PIO18;
+wire bWM_PIO20;
+wire bWM_PIO21;
+wire bWM_PIO27;
+wire bWM_PIO28;
+wire bWM_PIO29;
+wire bWM_PIO31;
+wire bWM_PIO34;
+wire bWM_PIO35;
+wire bWM_PIO36;
+wire iFLASH_MISO;
+wire oFLASH_CS;
+wire oFLASH_HOLD;
+wire oFLASH_MOSI;
+wire oFLASH_SCK;
+wire oFLASH_WP;
+wire oHDMI_CLK;
+wire [2:0]  oHDMI_TX;
+wire oSAM_INT;
+wire [11:0]  oSDRAM_ADDR;
+wire [1:0]  oSDRAM_BA;
+wire oSDRAM_CASn;
+wire oSDRAM_CKE;
+wire oSDRAM_CLK;
+wire oSDRAM_CSn;
+wire [1:0]  oSDRAM_DQM;
+wire oSDRAM_RASn;
+wire oSDRAM_WEn;
+wire oWM_RESET;
+wire oWM_RX;
+
+// assign statements (if any)                          
+assign bHDMI_SCL = treg_bHDMI_SCL;
+assign bHDMI_SDA = treg_bHDMI_SDA;
+assign bMIPI_GP = treg_bMIPI_GP;
+assign bMIPI_SCL = treg_bMIPI_SCL;
+assign bMIPI_SDA = treg_bMIPI_SDA;
+assign bMKR_A = treg_bMKR_A;
+assign bMKR_AREF = treg_bMKR_AREF;
+assign bMKR_D = treg_bMKR_D;
+assign bPEX_PIN6 = treg_bPEX_PIN6;
+assign bPEX_PIN8 = treg_bPEX_PIN8;
+assign bPEX_PIN10 = treg_bPEX_PIN10;
+assign bPEX_PIN12 = treg_bPEX_PIN12;
+assign bPEX_PIN14 = treg_bPEX_PIN14;
+assign bPEX_PIN16 = treg_bPEX_PIN16;
+assign bPEX_PIN20 = treg_bPEX_PIN20;
+assign bPEX_PIN28 = treg_bPEX_PIN28;
+assign bPEX_PIN30 = treg_bPEX_PIN30;
+assign bPEX_PIN32 = treg_bPEX_PIN32;
+assign bPEX_PIN42 = treg_bPEX_PIN42;
+assign bPEX_PIN44 = treg_bPEX_PIN44;
+assign bPEX_PIN45 = treg_bPEX_PIN45;
+assign bPEX_PIN46 = treg_bPEX_PIN46;
+assign bPEX_PIN47 = treg_bPEX_PIN47;
+assign bPEX_PIN48 = treg_bPEX_PIN48;
+assign bPEX_PIN49 = treg_bPEX_PIN49;
+assign bPEX_PIN51 = treg_bPEX_PIN51;
+assign bPEX_RST = treg_bPEX_RST;
+assign bSDRAM_DQ = treg_bSDRAM_DQ;
+assign bWM_PIO1 = treg_bWM_PIO1;
+assign bWM_PIO2 = treg_bWM_PIO2;
+assign bWM_PIO3 = treg_bWM_PIO3;
+assign bWM_PIO4 = treg_bWM_PIO4;
+assign bWM_PIO5 = treg_bWM_PIO5;
+assign bWM_PIO7 = treg_bWM_PIO7;
+assign bWM_PIO8 = treg_bWM_PIO8;
+assign bWM_PIO18 = treg_bWM_PIO18;
+assign bWM_PIO20 = treg_bWM_PIO20;
+assign bWM_PIO21 = treg_bWM_PIO21;
+assign bWM_PIO27 = treg_bWM_PIO27;
+assign bWM_PIO28 = treg_bWM_PIO28;
+assign bWM_PIO29 = treg_bWM_PIO29;
+assign bWM_PIO31 = treg_bWM_PIO31;
+assign bWM_PIO34 = treg_bWM_PIO34;
+assign bWM_PIO35 = treg_bWM_PIO35;
+assign bWM_PIO36 = treg_bWM_PIO36;
+assign iFLASH_MISO = treg_iFLASH_MISO;
+assign oFLASH_HOLD = treg_oFLASH_HOLD;
+assign oFLASH_MOSI = treg_oFLASH_MOSI;
+assign oFLASH_WP = treg_oFLASH_WP;
+assign oWM_RESET = treg_oWM_RESET;
+assign oWM_RX = treg_oWM_RX;
+MKRVIDOR4000_top i1 (
+// port map - connection between master ports and signals/registers   
+	.bHDMI_SCL(bHDMI_SCL),
+	.bHDMI_SDA(bHDMI_SDA),
+	.bMIPI_GP(bMIPI_GP),
+	.bMIPI_SCL(bMIPI_SCL),
+	.bMIPI_SDA(bMIPI_SDA),
+	.bMKR_A(bMKR_A),
+	.bMKR_AREF(bMKR_AREF),
+	.bMKR_D(bMKR_D),
+	.bPEX_PIN6(bPEX_PIN6),
+	.bPEX_PIN8(bPEX_PIN8),
+	.bPEX_PIN10(bPEX_PIN10),
+	.bPEX_PIN12(bPEX_PIN12),
+	.bPEX_PIN14(bPEX_PIN14),
+	.bPEX_PIN16(bPEX_PIN16),
+	.bPEX_PIN20(bPEX_PIN20),
+	.bPEX_PIN28(bPEX_PIN28),
+	.bPEX_PIN30(bPEX_PIN30),
+	.bPEX_PIN32(bPEX_PIN32),
+	.bPEX_PIN42(bPEX_PIN42),
+	.bPEX_PIN44(bPEX_PIN44),
+	.bPEX_PIN45(bPEX_PIN45),
+	.bPEX_PIN46(bPEX_PIN46),
+	.bPEX_PIN47(bPEX_PIN47),
+	.bPEX_PIN48(bPEX_PIN48),
+	.bPEX_PIN49(bPEX_PIN49),
+	.bPEX_PIN51(bPEX_PIN51),
+	.bPEX_RST(bPEX_RST),
+	.bSDRAM_DQ(bSDRAM_DQ),
+	.bWM_PIO1(bWM_PIO1),
+	.bWM_PIO2(bWM_PIO2),
+	.bWM_PIO3(bWM_PIO3),
+	.bWM_PIO4(bWM_PIO4),
+	.bWM_PIO5(bWM_PIO5),
+	.bWM_PIO7(bWM_PIO7),
+	.bWM_PIO8(bWM_PIO8),
+	.bWM_PIO18(bWM_PIO18),
+	.bWM_PIO20(bWM_PIO20),
+	.bWM_PIO21(bWM_PIO21),
+	.bWM_PIO27(bWM_PIO27),
+	.bWM_PIO28(bWM_PIO28),
+	.bWM_PIO29(bWM_PIO29),
+	.bWM_PIO31(bWM_PIO31),
+	.bWM_PIO34(bWM_PIO34),
+	.bWM_PIO35(bWM_PIO35),
+	.bWM_PIO36(bWM_PIO36),
+	.iCLK(iCLK),
+	.iFLASH_MISO(iFLASH_MISO),
+	.iHDMI_HPD(iHDMI_HPD),
+	.iMIPI_CLK(iMIPI_CLK),
+	.iMIPI_D(iMIPI_D),
+	.iPEX_PIN11(iPEX_PIN11),
+	.iPEX_PIN13(iPEX_PIN13),
+	.iPEX_PIN23(iPEX_PIN23),
+	.iPEX_PIN25(iPEX_PIN25),
+	.iPEX_PIN31(iPEX_PIN31),
+	.iPEX_PIN33(iPEX_PIN33),
+	.iRESETn(iRESETn),
+	.iSAM_INT(iSAM_INT),
+	.iWM_PIO32(iWM_PIO32),
+	.iWM_TX(iWM_TX),
+	.oFLASH_CS(oFLASH_CS),
+	.oFLASH_HOLD(oFLASH_HOLD),
+	.oFLASH_MOSI(oFLASH_MOSI),
+	.oFLASH_SCK(oFLASH_SCK),
+	.oFLASH_WP(oFLASH_WP),
+	.oHDMI_CLK(oHDMI_CLK),
+	.oHDMI_TX(oHDMI_TX),
+	.oSAM_INT(oSAM_INT),
+	.oSDRAM_ADDR(oSDRAM_ADDR),
+	.oSDRAM_BA(oSDRAM_BA),
+	.oSDRAM_CASn(oSDRAM_CASn),
+	.oSDRAM_CKE(oSDRAM_CKE),
+	.oSDRAM_CLK(oSDRAM_CLK),
+	.oSDRAM_CSn(oSDRAM_CSn),
+	.oSDRAM_DQM(oSDRAM_DQM),
+	.oSDRAM_RASn(oSDRAM_RASn),
+	.oSDRAM_WEn(oSDRAM_WEn),
+	.oWM_RESET(oWM_RESET),
+	.oWM_RX(oWM_RX)
+);
+initial                                                
+begin                                                  
+// code that executes only once                        
+// insert code here --> begin                          
+                                                       
+// --> end                                             
+$display("Running testbench");                       
+end                                                    
+always                                                 
+// optional sensitivity list                           
+// @(event1 or event2 or .... eventn)                  
+begin                                                  
+// code executes for every event on sensitivity list   
+// insert code here --> begin                          
+                                                       
+@eachvec;                                              
+// --> end                                             
+end                                                    
+endmodule
+
